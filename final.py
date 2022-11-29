@@ -30,4 +30,8 @@ def centralPark():
         print("Sorry but thats not an option, try again")
         centralPark()
 def ladyLiberty():
-    answer4 = input("GAME OVER.\nWhile you were on the ferry to the Statue, it suddenly jolted and lets just say it only went down from there. literally, the ferry sank and unfortunatly you didn't know how to swim and you drowned. FERRY ENDING")
+    answer4 = input("GAME OVER.\nWhile you were on the ferry to the Statue, it suddenly jolted and lets just say it only went down from there. literally, the ferry sank and unfortunatly you didn't know how to swim and you drowned.\n FERRY ENDING\n\n\nDo you want to try again?\nY/N\n")
+    if answer4 == "Y":
+        start()
+    elif answer4 == "N":
+        print("")
