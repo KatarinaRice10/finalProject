@@ -15,6 +15,7 @@ def signalCab():
     if answer2 == "1":
         centralPark()
     elif answer2 == "2":
+        ladyLiberty()
     elif answer2 == "3":
         artGallery()
     else:
@@ -34,4 +35,22 @@ def ladyLiberty():
     if answer4 == "Y":
         start()
     elif answer4 == "N":
-        print("")
+        print("Jeez okay then")
+    else:
+        print("Sorry but thats not an option, try again\n\n\n")
+        ladyLiberty()
+def artGallery():
+    answer5 = input("GAME OVER. \nWell that kinda sucks. I guess you want to know what happened then. Well all I can say is meteor.\nDo you want to play again?  Y/N\n")
+    if answer5 == "Y":
+        start()
+    elif answer5 == "N":
+        print("um okay i guess you can leave then *-*")
+    else:
+        print("Sorry but thats not an option, try again")
+        artGallery()
+def walkAround():
+    answer6 = input("Alraight, a bit of walking never hurt anyone, as you're walking you notice a dark alley. Do you want to\n1. Go explore the alley\n2. Walk past it")
+    if answer6 == "1":
+        exploreTheAlley()
+    elif answer6 == "2":
+        walkPastAlley()
